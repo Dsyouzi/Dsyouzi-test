@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+
+<body>
+    <!--链接-->
+    <!--<h1 style="text-align:center;">  This is a Web</h1>
+    <a href="https://www.baidu.com"><code>wow</code>这是一个链接</a> <! it is a zhushi>
+    <a href="//www.runoob.com/html/html-tutorial.html">
+        <img border="10" src="1619440608.jpeg" alt="HTML 教程" width="50" height="20">
+    </a></p>-->
+    <!--表格相关-->
+    <!--<table border="1">
+        <caption> First table</caption>
+        <colgroup>
+            <col span="2" style="background-color:red">
+            <col span="1"  style="background-color:yellow">
+        </colgroup>
+        <tr>
+            <th>Head 1</th>
+            <th>Head 2</th>
+            <th>Head 3</th>
+        </tr>
+        <tr>
+            <td> HHHHHHHH</td>
+            <td>HHHHHHH</td>
+            <td>WOW</td>
+        </tr>
+    </table>-->
+    <!--列表-->
+    <!--<ul>
+        <content> coffee</content>
+        <li>Milk</li>
+    </ul>
+    <ol> HAPPY</ol>-->
+    <table width="500" border="0">
+        <tr>
+            <td colspan="2" style="background-color:#FFA500;">
+                <h1>主要的网页标题</h1>
+            </td>
+        </tr>
+        <tr>
+            <td style="background-color:rgba(231, 231, 175, 1);width:100px;vertical-align:top;">
+                <b>菜单</b><br>
+                HTML<br>
+                CSS<br>
+                JavaScript
+            </td>
+            <td style="background-color:#eeeeee;height:300px;width:400px;vertical-align:top;">
+                内容在这里
+            </td>
+        </tr>
+        <tr>
+            <td colspan="3" style="background-color:antiquewhite ;width:500px;text-align:center">
+                made by ds
+            </td>
+        </tr>
+    </table>
+    <!-- 表单 -->
+    <form>
+        <input type="checkbox" name="sex" value = "男"  >
+    </form>
+    <iframe src="Untitled-1.html" width:300px height:100px>
+    </iframe><br>
+   <form>
+       <input type="date" name = "brdy">
+       <input type="submit">
+   </form>
+   <!-- 视频 -->
+    <div style="text-align: center;">
+        <button onclick="playorpause()">播放/暂停</button>
+        <button onclick="big()">放大</button>
+        <button onclick="small()">缩小</button>
+        <button onclick="putong()">正常</button><br>
+        <video id="vedio1" width="400"  controls>
+            <source src="00.mp4" type = "video/mp4"> 
+        </video>
+    </div>
+    <script>
+        var thevideo = document.getElementById("vedio1")
+        function playorpause()
+        {
+            if(thevideo.paused)
+            thevideo.play();
+            else
+            thevideo.pause();
+        }
+        function big()
+        {
+            thevideo.width=560;
+        }
+        function small()
+        {
+            thevideo.width=300;
+        }
+        function putong()
+        {
+            thevideo.width=400;
+        }
+    </script>
+    
+</body>
+
+</html>
